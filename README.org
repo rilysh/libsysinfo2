@@ -1,0 +1,23 @@
+#+title:   How to use sysinfo() interface?
+#+author:  rilysh
+#+author:  Kostas Petrikas
+#+email:   nightquick@proton.me
+
+** What is sysinfo function?
+=sysinfo()= originally is a GNU libc function, used to retrieve
+various system information.
+
+** Why it's needed on FreeBSD?
+It was created to make it easier to port GNU/Linux applications
+on FreeBSD by Kostas Petrikas. The original source of libsysinfo
+is now archived [[https://code.google.com/archive/p/sysinfo-bsd/][here]] ([[https://web.archive.org/web/20231223182848/https://code.google.com/archive/p/sysinfo-bsd/][archived]]).
+
+** What is libsysinfo2?
+It's libsysinfo version 2. I've removed some ancient code, gave
+some cleanup, and improved error handling.
+
+** Examples
+See the =test= folder.
+
+** Other links
+bsdimp's fork of libsysinfo at: https://github.com/bsdimp/libsysinfo
